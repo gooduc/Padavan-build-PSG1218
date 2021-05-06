@@ -3,6 +3,10 @@ name: Build Padavan
 on:
   release:
     types: [published]
+
+  schedule:
+    - cron: 0 20 * * 4
+   
   watch:
     types: [started]
 
